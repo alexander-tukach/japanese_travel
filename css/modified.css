@@ -1,11 +1,17 @@
 .body {
     max-width: 1440px;
+    min-height: 100vh;
     margin: 0 auto;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     color: #ffffff;
     background: url(../img/first_background_image.jpeg) center 0 no-repeat, #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .first_wrapper {
@@ -102,7 +108,7 @@
     align-items: flex-start;
 }
 
-.first_input {
+.discover_input {
     margin-left: 23px;
     padding: 0;
     border: none;
@@ -114,20 +120,7 @@
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
-}
-
-.second_input {
-    margin-left: 23px;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    min-width: 225px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    color: #ffffff;
+    flex-grow: 1;
 }
 
 .discover_button {
@@ -143,17 +136,24 @@
     line-height: 29px;
 }
 
-.first_input::-webkit-input-placeholder, .second_input::-webkit-input-placeholder {
+.discover_button:hover, .discover_button:focus, .discover_button:active {
+    background-color: #0b5dc8;
+    color: #ffffffc8;
+}
+
+.discover_input::-webkit-input-placeholder {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: #ffffff;
+    color: #ffffffc8;
 }
 
 .oval_image {
     margin-top: -2.45px;
+    width: 20px;
+    height: 20px;
 }
 
 /* Discover section end */
@@ -201,16 +201,47 @@
 
 .benefits_link {
     max-width: 161px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: inline-flex;
     text-decoration: none;
     color: #006DFE;
+    padding-right: 59px;
+    background: url(../img/svg/shape.svg) no-repeat right;
+    transition: 0.2s all;
+}
+
+.benefits_link:hover, .benefits_link:focus {
+    background: url(../img/svg/shape.svg) no-repeat 95%;
+}
+
+/* Benefits section end */
+
+/* Get_inspired section start */
+
+.get_inspired_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.get_inspired_limk_wrapper {
+    display: inline-flex;
+    max-width: 131px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 59px;
+    background: url(../img/svg/shape.svg) no-repeat right;
+    transition: 0.2s all;
+    color: #006DFE;
+    text-decoration: none;
+}
+
+.get_inspired_limk_wrapper:hover, .get_inspired_limk_wrapper:focus {
+    background: url(../img/svg/shape.svg) no-repeat 95%;
 }
 
 
 
-/* Benefits section end */
+/* Get_inspired section end */
 
 /* Main end */
 
