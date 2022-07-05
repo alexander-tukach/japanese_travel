@@ -66,7 +66,8 @@ img {
 /* Discover section start */
 
 .discover {
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 242px;
 }
 
 .discover_main_text {
@@ -205,22 +206,48 @@ img {
     text-decoration: none;
     color: #006DFE;
     padding-right: 59px;
-    background: url(../img/svg/shape.svg) no-repeat right;
+    background: url(../img/svg/shape.svg) no-repeat 95%;
     transition: 0.2s all;
 }
 
 .benefits_link:hover, .benefits_link:focus {
-    background: url(../img/svg/shape.svg) no-repeat 95%;
+    background: url(../img/svg/shape.svg) no-repeat right;
+    opacity: 0.65;
 }
 
 /* Benefits section end */
 
 /* Get_inspired section start */
 
+.get_inspired_wrapper {
+    margin-bottom: 131px;
+}
+
 .get_inspired_title {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.get_inspired_main_text {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.get_inspired_main_text::after {
+    display: block;
+    content: '';
+    width: 253px;
+    height: 3px;
+    background: #006DFE;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .get_inspired_limk_wrapper {
@@ -229,6 +256,7 @@ img {
     font-size: 16px;
     line-height: 24px;
     padding-right: 59px;
+    margin-left: 30px;
     background: url(../img/svg/shape.svg) no-repeat right;
     transition: 0.2s all;
     color: #006DFE;
@@ -236,12 +264,92 @@ img {
 }
 
 .get_inspired_limk_wrapper:hover, .get_inspired_limk_wrapper:focus {
-    background: url(../img/svg/shape.svg) no-repeat 95%;
+    /* may be done like benefits links */
+    /* background: url(../img/svg/shape.svg) no-repeat 95%; */
+    opacity: 0.65;
 }
 
+.get_inspired_pictures {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
 
+.inspired_card {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+}
+
+.inspired_card::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.inspired_card:hover .inspired_img, .inspired_card:focus .inspired_img {
+    transform: scale(1.05);
+}
+
+.inspired_card:hover .inspired_img_text, .inspired_card:focus .inspired_img_text {
+    color: #ffffffc8;
+}
+
+.large_card {
+    grid-column: span 3;
+}
+
+.small_card {
+    grid-column: span 2;
+}
+
+.inspired_img {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.15s all;
+}
+
+.inspired_img_lg {
+    height: 354px;
+}
+
+.inspired_img_small {
+    height: 283px;
+}
+
+.inspired_img_text {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 27px;
+    left: 30px;
+    z-index: 3;
+}
+
+.inspired_img_link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
 
 /* Get_inspired section end */
+
+/* Pages start */
+
+
+
+/* Pages end */
 
 /* Main end */
 
