@@ -251,7 +251,6 @@ img {
 }
 
 .get_inspired_limk_wrapper {
-    display: inline-flex;
     max-width: 131px;
     font-size: 16px;
     line-height: 24px;
@@ -347,9 +346,162 @@ img {
 
 /* Pages start */
 
+.pages {
+    margin-bottom: 139px;
+}
 
+.page {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 77px;
+}
+
+.page_img {
+    width: 100%;
+    grid-column: span 2;
+    overflow: hidden;
+}
+
+.page_img:hover .page_start_img {
+    transform: scale(1.05);
+}
+
+.page_start_img {
+    height: 100%;;
+    object-fit: cover;
+    transition: 0.15s all;
+}
+
+.page_info {
+    width: 90%;
+    margin: 0 auto;
+    object-fit: cover;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.page_info_header {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.page_link {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 59px;
+    background: url(../img/svg/shape.svg) no-repeat 95%;
+    transition: 0.2s all;
+    color: #006DFE;
+    text-decoration: none;
+}
+
+.page_link:hover, .page_link:focus {
+    opacity: 0.65;
+    background: url(../img/svg/shape.svg) no-repeat right;
+}
+
+.page_link1 {
+    max-width: 203px;
+}
+
+.page_link2 {
+    max-width: 239px;
+}
 
 /* Pages end */
+
+/* Places start */
+
+.places_all {
+    margin-bottom: 86px;
+}
+
+.place_title {
+    margin-bottom: 56px;
+}
+
+.place_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 65px;
+}
+
+.card_img_block {
+    margin-bottom: 45px;
+    position: relative;
+    height: 373px;
+}
+
+.card_img {
+    height: 100%;
+}
+
+.card_text {
+    margin-bottom: 31px;
+}
+
+.card_button {
+    width: 118px;
+    height: 42px;
+    background: #006DFE;
+    color: #FFFFFF;
+    border: 0;
+}
+
+.card_bottom_picture {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(21, 24, 36, 0.6);
+    height: 55px;
+    width: 100%;
+    padding: 0 25px 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.card_bottom_picture_inform {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_bottom_picture_like {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 14px;
+}
+
+.card_bottom_picture_like_count {
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+.card_bottom_picture_comments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_bottom_picture_comment_count {
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+
+/* Places end */
 
 /* Main end */
 
