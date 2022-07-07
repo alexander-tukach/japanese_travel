@@ -427,7 +427,17 @@ img {
 .place_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 65px;
+    grid-gap: 60px;
+}
+
+.place_card {
+    width: 100%;
+    min-height: 567px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .card_img_block {
@@ -444,12 +454,20 @@ img {
     margin-bottom: 31px;
 }
 
-.card_button {
-    width: 118px;
-    height: 42px;
+.card_button_block {
+    /* width: 118px;
+    height: 42px; */
+    padding: 12px 19px;
     background: #006DFE;
     color: #FFFFFF;
     border: 0;
+    text-decoration: none;
+    margin: auto 0 0 0;
+}
+
+.card_button_block:hover, .card_button_block:active, .card_button_block:focus {
+    background-color: #0b5dc8;
+    transition: 0.15s;
 }
 
 .card_bottom_picture {
@@ -457,7 +475,7 @@ img {
     bottom: 0;
     left: 0;
     background: rgba(21, 24, 36, 0.6);
-    height: 55px;
+    min-height: 55px;
     width: 100%;
     padding: 0 25px 0 25px;
     display: flex;
