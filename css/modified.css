@@ -209,11 +209,9 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 57px;
-    align-items: flex-end;
 }
 
 .benefits_card {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -565,6 +563,27 @@ img {
 
 
 /* Places end */
+
+/* Video start */
+
+.videos_wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.videos_element {
+    padding-top: 56.25%;
+}
+
+.videos_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Video end */
 
 /* Main end */
 
