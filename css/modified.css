@@ -167,6 +167,7 @@ img {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-right: 20px;
 }
 
 .discover_input {
@@ -494,13 +495,14 @@ img {
 
 .place_wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 57px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 57px;
 }
 
 .place_card {
     width: 100%;
     min-height: 567px;
+    grid-column: span 2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -650,7 +652,7 @@ img {
     padding: 16.52% 23.19% 16.52% 0;
     /* display: grid;
     grid-template-columns: repeat(3, 1fr); */
-    /* grid-gap: 21%; */
+    /* gap: 21%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -691,6 +693,65 @@ img {
 
 /* Media start */
 
+@media screen and (max-width: 864px) {
+    .searche_field {
+        margin-bottom: 20px;
+    }
+    .benefits_wrapper {
+        padding: 100px 15px;
+        margin-top: -300px;
+        margin-bottom: 0;
+        box-shadow: none;
+    }
+    .benefits_main_text {
+        margin-bottom: 50px;
+    }
+    .card_benefits_wrapper {
+        gap : 20px;
+        grid-ga
+    }
+    .get_inspired_wrapper {
+        margin-bottom: 100px;
+    }
+    .get_inspired_main_text {
+        margin-bottom: 30px;
+    }
+    .get_inspired_title {
+        margin-bottom: 0;
+    }
+    .large_card {
+        grid-column: span 6;
+    }
+    .small_card {
+        grid-column: span 6;
+    }
+    .pages {
+        margin-bottom: 100px;
+    }
+    .pages_page {
+        gap: 30px;
+    }
+    .places_all {
+        margin-bottom: 100px;
+    }
+    .place_wrapper {
+        gap: 20px;
+    }
+    .place_card {
+        grid-column: span 3;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer_logo {
+        padding: 50px 0px 50px 15px;
+    }
+    .footer_colomn {
+        padding: 50px 15px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .header_burger {
         display: block;
@@ -723,7 +784,7 @@ img {
     }
     .nav_items_link {
         font-weight: 400;
-        font-size: 39px;
+        font-size: 28px;
         line-height: 2em;
     }
     .header_navigation_closed {
